@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
       if (data.length) {
         res.send(data);
       } else {
-        res.send("no data found");
+        res.send([]);
       }
     })
     .catch((err) => res.send({ msg: err, failed: true }));
